@@ -15,7 +15,7 @@ public class SpringRestControllerGenerator implements Generator {
     public SpringRestControllerGenerator(Reader reader, Writer writer) throws IOException {
         this.reader = reader;
         this.writer = writer;
-        generate();
+//        generate();
     }
 
     @Override
