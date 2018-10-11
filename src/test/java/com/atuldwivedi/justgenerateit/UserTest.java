@@ -28,10 +28,13 @@ public class UserTest {
         addresses.add(null);
         addresses.add(new Address("G", 7L, new Amount(new Currency("USD"))));
         user.setAddresses(addresses);
+        user.setName("Atul");
+        user.setLastName("Dwivedi");
 
         //when
         Set<String> actualCurrencyIds = user.getCurrencyIds();
-        System.out.print(actualCurrencyIds);
+        Set<String> strings = user.getAllStrings();
+        System.out.print(strings);
 
         assertThat(actualCurrencyIds).isNotNull();
     }
